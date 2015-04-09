@@ -1,8 +1,8 @@
 Package.describe({
-    summary: "Accounts Templates styled for Ionic.",
+    summary: "Accounts Templates styled for Meteoric.",
     version: "1.8.1",
-    name: "useraccounts:ionic",
-    git: "https://github.com/meteor-useraccounts/ionic.git",
+    name: "useraccounts:meteoric",
+    git: "https://github.com/Vilango/meteoric.git",
 });
 
 Package.on_use(function(api, where) {
@@ -55,13 +55,16 @@ Package.on_use(function(api, where) {
         "lib/at_title.html",
         "lib/at_title.js",
         "lib/full_page_at_form.html",
-        "lib/at_ionic.less"
+        "lib/at_ionic.less",
+        "lib/full_page_at_title.html",
+        "lib/full_page_at_title.js"
+
     ], ["client"]);
 });
 
 Package.on_test(function(api) {
     api.use([
-        "useraccounts:ionic",
+        "useraccounts:meteoric",
         "useraccounts:core@1.8.1",
     ]);
 
